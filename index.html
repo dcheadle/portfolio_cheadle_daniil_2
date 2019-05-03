@@ -7,28 +7,28 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
-    
+    <body class="home">
 <header>
-        <img src="images/profile_arch.png">
-        <img src="images/portrait.png">
-        <img src="images/logo.png">
-        <p>DANIIL CHEADLE</p>
-        <p>GRAPHIC DESIGN + DIGITAL MEDIA</p>
+        <img id="port-background" src="images/portrait.png">
+    
+        <img class="arch" src="images/profile_arch.png">
         
-       
-        <section>
-            <img src="images/resume.jpg">
-        </section>    
-        
-    <section>
-        <p>RESUME</p>
-    </section>
-        
-    <section>
-        <p>CLOSE</p>
-    </section>
-   
+        <div id="logo-info">
+            <img src="images/logo.png"><br>
+            <p class="name">DANIIL CHEADLE</p><br>
+            <p>GRAPHIC DESIGN + DIGITAL MEDIA</p> 
+        </div>
  </header>
+        
+    <div id="resume-btn">
+        <p><span style="cursor:pointer" onclick="openNav()">RESUME</span></p>
+    </div>
+    
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span>&times; CLOSE</span></a>
+    <img src="images/resume.jpg">
+</div>
     
      <div class="content">
         <section class="double">
@@ -108,10 +108,25 @@
             <p>BACK TO TOP</p>
          </section>
     
-    
-    
-    
-    
-    
     </div>
+        
+        
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+  document.getElementById("resume-btn").style.display = "none";
+  document.getElementById("logo-info").style.display = "none";
+  document.getElementById("port-background").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+  document.getElementById("resume-btn").style.display = "block";
+  document.getElementById("logo-info").style.display = "block";
+  document.getElementById("port-background").style.display = "none";
+}
+</script>
+        
+    </body>
+</html>
    

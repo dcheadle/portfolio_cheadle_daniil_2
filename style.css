@@ -58,12 +58,22 @@ header {
     text-align: center;
     background-color: #60A8B5;
     padding: 15px;
+    color: white;
 }
 header p,
 header img {
     display: inline-block;
     vertical-align: middle;
     padding: 0 20px; 
+}
+.home header {
+    padding: 0;
+    background: #FFF;
+    color: #333;
+    position: relative;
+}
+.home header img {
+    padding: 0;
 }
 header a {
     color: #FFF;
@@ -153,9 +163,99 @@ section.single {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-header {
-    color: white;
-}
+
 .next {
     padding-top: 5%;
+}
+
+#port-background {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.arch {
+    z-index: 1;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#logo-info {
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    width: 100%;
+}
+#logo-info img {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 68px;
+}
+#logo-info p {
+    margin: 0;
+}
+#logo-info p.name {
+    font-size: 50px;
+    line-height: 72px;
+    border-bottom: 4px solid #D9594E;
+}
+
+
+#resume-btn {
+    background: #FFF;
+    border-top: 9px solid #D9594E;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#resume-btn p {
+    margin: 0;
+    margin-top: -3px;
+}
+#resume-btn p span {
+    background: #D9594E;
+    display: inline-block;
+    padding: 0 20px;
+    color: #FFF;
+}
+
+.sidenav {
+  width: 100%;
+  z-index: 1;
+  background-color: #FFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+    position: relative;
+    display: none;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.sidenav a {
+  padding: 0;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 9px solid #D9594E;
+}
+.sidenav .closebtn span {
+    background: #D9594E;
+    display: inline-block;
+    padding: 0 20px;
+    color: #FFF;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
